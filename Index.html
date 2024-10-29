@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Yadian, editor de videos profesional.">
+    <title>Mi Portfolio de Edición de Video</title> 
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<header>
+    <h1>Mi Portfolio de Edición de Video</h1>
+    <nav>
+        <a class="apartado" href="index.html"><strong>Sobre Mi</strong></a>
+        <a class="apartado" href="habilidades.html">Habilidades</a>
+        <a class="apartado" href="proyectos.html">Proyectos</a>
+    </nav>
+</header>
+
+<!-- Sección Sobre Mí -->
+<section id="sobreMi">
+    <h2>Sobre Mí</h2>
+    <p id="aboutMeText"></p>
+    <textarea id="aboutMeInput" placeholder="Escribe aquí sobre ti" style="display: none;"></textarea>
+    <button onclick="saveAboutMe()" class="save-button" style="display: none;">Guardar Cambios</button>
+    <button onclick="deleteAboutMeText()" class="delete-button" style="display: none;">Eliminar Texto</button>
+    <button id="devModeButton" onclick="showPasswordPrompt()">Modo Desarrollador</button>
+    <div id="passwordContainer" style="display: none;">
+        <input type="password" id="password" placeholder="Introduce la contraseña" onkeypress="checkPasswordOnEnter(event)">
+        <button onclick="checkPassword()">Confirmar</button>
+    </div>
+</section>
+
+<footer id="contacto">
+    <h2>Contacto</h2>
+    <p>Si estás interesado en colaborar conmigo, no dudes en contactarme a través de mis 
+        <a id="links" href="https://linktr.ee/Yadi.Edits" style="color: #0077ff" target="_blank">Redes sociales</a>.
+    </p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>
