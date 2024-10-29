@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio de Edición de Video</title>
+    <link rel="stylesheet" href="proyectos.css">
+</head>
+<body>
+
+<header>
+    <h1>Mi Portfolio de Edición de Video</h1>
+    <nav>
+        <a class="apartado" href="Index.html">Sobre Mí</a>
+        <a class="apartado" href="habilidades.html">Habilidades</a>
+        <a class="apartado" href="proyectos.html"><strong>Proyectos</strong></a>
+    </nav>
+</header>
+
+<section id="proyectos">
+    <h2>Proyectos Destacados</h2>
+    <div id="videoList"></div>
+    <h3>Subir Nuevo Proyecto</h3>
+    <div id="uploadSection" style="display: none;">
+        <input type="text" id="titleInput" placeholder="Título del Video" required>
+        <input type="file" id="videoInput" accept="video/mp4,video/x-m4v,video/*" required>
+        <button onclick="addVideo()">Añadir Video</button>
+    </div>
+    <button id="devModeButton" onclick="showPasswordPrompt()">Modo Desarrollador</button>
+    <div id="passwordContainer" style="display: none;">
+        <input type="password" id="password" placeholder="Introduce la contraseña" onkeypress="checkPasswordOnEnter(event)">
+        <button onclick="checkPassword()">Confirmar</button>
+    </div>
+</section>
+
+<footer id="contacto">
+    <h2>Contacto</h2>
+    <p>Si estás interesado en colaborar conmigo, no dudes en contactarme a través de mis 
+        <a id="links" href="https://linktr.ee/Yadi.Edits" style="color: #0077ff" target="_blank">Redes sociales</a>.
+    </p>
+</footer>
+
+<script src="proyectos.js"></script>
+</body>
+</html>
